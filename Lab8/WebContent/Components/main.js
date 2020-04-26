@@ -33,11 +33,10 @@ $(document).on(
 			$("#formStudent")[0].reset();
 		});
 
-//REMOVE==========================================
-$(document).on("click", ".remove", function(event)
-{
- $(this).closest(".student").remove();
+// REMOVE==========================================
+$(document).on("click", ".remove", function(event) {
+	$(this).closest(".student").remove();
 
- $("#alertSuccess").text("Removed successfully.");
- $("#alertSuccess").show();
-}); 
+	$("#alertSuccess").text("Removed successfully.");
+	$("#alertSuccess").show();
+});
