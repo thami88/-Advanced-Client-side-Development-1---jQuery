@@ -41,23 +41,19 @@ $(document).on("click", ".remove", function(event) {
 	$("#alertSuccess").show();
 });
 
-//CLIENT-MODEL=================================================================
-function validateItemForm()
-{
-// NAME
-if ($("#txtName").val().trim() == "")
- {
- return "Insert student name.";
- }
-// GENDER
-if ($('input[name="rdoGender"]:checked').length === 0)
- {
- return "Select gender.";
- }
-// YEAR
-if ($("#ddlYear").val() == "0")
- {
- return "Select year.";
- }
-return true;
-} 
+// CLIENT-MODEL=================================================================
+function validateItemForm() {
+	// NAME
+	if ($("#txtName").val().trim() == "") {
+		return "Insert student name.";
+	}
+	// GENDER
+	if ($('input[name="rdoGender"]:checked').length === 0) {
+		return "Select gender.";
+	}
+	// YEAR
+	if ($("#ddlYear").val() == "0") {
+		return "Select year.";
+	}
+	return true;
+}
